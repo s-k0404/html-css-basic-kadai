@@ -1,0 +1,58 @@
+div{
+    text-align: center;
+    /*classを使用する際、cssは先頭に「.」をつける*/
+.text-skyblue {
+    color: skyblue
+  }
+  .text-pink{
+    color: rgb(255, 192, 203);
+  }
+  
+}
+.decoration{
+    font-family: "Arial","Meiryo",sans-serif;
+}
+p{
+    font-size: 20px;
+}
+h1{
+   font-size: 40px; 
+   /*下記は文字にアンダーラインを引くタグ*/
+   border-bottom: solid 3px rgb(115,115,114);
+   
+   /*下記は文字の間隔を変えるタグ*/
+   letter-spacing: 1.3em;
+   font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+/*下記は文字に影をつけるタグ。左から1px→影の右方向の長さ、1px→影の下方向の長さ、2px→影のぼけ具合、gray→影の色*/
+text-shadow: 5px 3px 2px gray;
+}
+/*下記は一文字目の色を変えるときに使用するタグ。（first-letter)*/
+.text::first-letter{
+    color: skyblue;
+}
+/*下記は三文字目の色を変えるときに使用するタグ。（third-letter)*/
+.text-third{
+    color: rgb(255, 192, 203);
+}
+.bold{
+    font-weight: bold;  /*フォントを太字にしている*/
+}
+.bolds{
+    font-weight: bold;  /*フォントを太字にしている*/
+}
+.bolds::first-letter{
+    letter-spacing: 15px; /*letter-spacingを入れることで侍と太郎の間に間隔を作っている*/
+}
+
+
+/*修正部分1→侍太郎の苗字と名前の間隔を広めるためにclassで侍太郎を"bolds"とし、その他太字にする1990年1月1日とO型をboldと表記したため
+行が増えて分かりづらい？一つに纏める方法はない？
+修正部分2→boldsが二行になる。フォントを太字にするためとフォント幅をとるため）纏める方法はない？
+
+
+
+
+
+
+
